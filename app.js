@@ -13,7 +13,7 @@ app.get("/test.mp3", function(req, res, next) {
   });
 
     res.writeHead(200, {
-    'Content-Length': 34852688,
+//    'Content-Length': 34852688,
     'Content-Type': 'audio/mpeg',
     'Cache-Control': 'public, max-age=86400, s-max-age=86400'
   });
