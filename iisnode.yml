@@ -1,0 +1,3 @@
+flushResponse: true
+nodeProcessCountPerApplication: 0
+loggingEnabled: true
