@@ -1,0 +1,23 @@
+{
+  "name": "streams-performance-test",
+  "version": "1.0.0",
+  "description": "Repo to test streaming latency with node on iisnode/iis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markusahlstrand/streamsPerfTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markusahlstrand/streamsPerfTest/issues"
+  },
+  "homepage": "https://github.com/markusahlstrand/streamsPerfTest",
+  "dependencies": {
+    "express": "^4.13.3",
+    "request": "^2.67.0"
+  }
+}
