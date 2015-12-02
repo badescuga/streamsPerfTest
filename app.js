@@ -27,6 +27,13 @@ app.get("/test.mp3", function (req, res, next) {
 });
 
 app.get("/test-cl.mp3", function (req, res, next) {
+   console.log("REQ WITH CL ----------------------");
+  console.log("REQ PARAMS: " + JSON.stringify(req.params));
+  console.log("REQ PROTOCOL: " + req.protocol);
+  console.log("REQ ISFRESH: " + req.fresh);
+  console.log("REQ ISSTALE: " + req.stale);
+  console.log("REQ HEADERS: " + JSON.stringify(req.headers));
+
   var audio = request.get('http://az592690.vo.msecnd.net/media/channels/varvet/acasts/verket-4-olofwretling-vinterip1/SE/STOCKHOLMSLAN/ALL/varvet-verket-4-olofwretling-vinterip1.mp3?ts=1448627427703');
   audio.on('data', function (chunk) {
     res.write(chunk);
