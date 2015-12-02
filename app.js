@@ -11,7 +11,7 @@ app.get("/test.mp3", function (req, res, next) {
   // console.log("REQ ISSTALE: " + req.stale);
   // console.log("REQ HEADERS: " + JSON.stringify(req.headers));
 
-  console.log("--------- res headers: "+util.inspect(res));
+  //console.log("--------- res headers: "+util.inspect(res));
 
   var audio = request.get('http://az592690.vo.msecnd.net/media/channels/varvet/acasts/verket-4-olofwretling-vinterip1/SE/STOCKHOLMSLAN/ALL/varvet-verket-4-olofwretling-vinterip1.mp3?ts=1448627427703');
   audio.on('data', function (chunk) {
@@ -25,7 +25,7 @@ app.get("/test.mp3", function (req, res, next) {
 
   res.writeHead(200, {
     //    'Content-Length': 34852688,
-    'Content-Type': 'audio/mpeg',
+ //   'Content-Type': 'audio/mpeg',
     'Test-Header-Badescuga': 'somevalue',
     'Cache-Control': 'public, max-age=86400, s-max-age=86400'
   });
