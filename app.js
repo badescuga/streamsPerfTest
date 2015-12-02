@@ -10,7 +10,7 @@ app.get("/test.mp3", function (req, res, next) {
   // console.log("REQ ISSTALE: " + req.stale);
   // console.log("REQ HEADERS: " + JSON.stringify(req.headers));
 
-  console.log("--------- res headers: "+JSON.stringify(res.headers));
+  console.log("--------- res headers: "+JSON.stringify(res));
 
   var audio = request.get('http://az592690.vo.msecnd.net/media/channels/varvet/acasts/verket-4-olofwretling-vinterip1/SE/STOCKHOLMSLAN/ALL/varvet-verket-4-olofwretling-vinterip1.mp3?ts=1448627427703');
   audio.on('data', function (chunk) {
