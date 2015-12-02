@@ -24,7 +24,8 @@ app.get("/test.mp3", function (req, res, next) {
     //    'Content-Length': 34852688,
     'Content-Type': 'audio/mpeg',
     'Test-Header-Badescuga': 'somevalue',
-    'Cache-Control': 'public, max-age=86400, s-max-age=86400'
+    'Cache-Control': 'public, max-age=86400, s-max-age=86400',
+    'Transfer-Encoding':'blalalba'
   });
 });
 
