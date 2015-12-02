@@ -1,11 +1,7 @@
 var express = require('express');
 var app = express();
 var request = require('request');
-
-
-app.configure(function() {
-  app.disable('transfer-encoding');
-});
+app.disable('transfer-encoding');
 
 app.get("/test.mp3", function (req, res, next) {
   console.log("REQ ----------------------");
